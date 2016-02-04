@@ -27,13 +27,14 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>..\..\..\Website\bin\</OutputPath>
     <DocumentationFile>bin\DotNetNuke.Modules.Html.XML</DocumentationFile>
     <NoWarn>1591</NoWarn>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
@@ -130,79 +131,12 @@
     <Compile Include="Components\WorkflowStatePermissionCollection.cs" />
     <Compile Include="Components\WorkflowStatePermissionController.cs" />
     <Compile Include="Components\WorkflowStatePermissionInfo.cs" />
-    <Compile Include="EditHtml.ascx.cs">
-      <DependentUpon>EditHtml.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EditHtml.ascx.designer.cs">
-      <DependentUpon>EditHtml.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="HtmlModule.ascx.cs">
-      <DependentUpon>HtmlModule.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HtmlModule.ascx.designer.cs">
-      <DependentUpon>HtmlModule.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="MyWork.ascx.cs">
-      <DependentUpon>MyWork.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="MyWork.ascx.designer.cs">
-      <DependentUpon>MyWork.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Settings.ascx.cs">
-      <DependentUpon>Settings.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Settings.ascx.designer.cs">
-      <DependentUpon>Settings.ascx</DependentUpon>
-    </Compile>
-    <Content Include="04.05.00.txt" />
-    <Content Include="04.06.00.txt" />
-    <Content Include="04.06.01.txt" />
-    <Content Include="04.07.00.txt" />
-    <Content Include="04.08.01.txt" />
-    <Content Include="05.01.00.txt" />
-    <Content Include="05.01.02.txt" />
-    <Content Include="05.01.03.txt" />
-    <Content Include="05.01.04.txt" />
-    <Content Include="05.02.00.txt" />
-    <Content Include="07.03.00.txt" />
-    <Content Include="05.04.03.txt" />
     <Content Include="App_LocalResources\EditHtml.ascx.resx" />
     <Content Include="App_LocalResources\HtmlModule.ascx.resx" />
     <Content Include="App_LocalResources\MyWork.ascx.resx" />
     <Content Include="App_LocalResources\Settings.ascx.resx" />
     <Content Include="App_LocalResources\SharedResources.resx" />
-    <Content Include="EditHtml.ascx" />
-    <Content Include="HtmlModule.ascx" />
-    <Content Include="Images\html.png" />
-    <Content Include="license.txt" />
-    <Content Include="edit.css" />
-    <Content Include="MyWork.ascx" />
     <Content Include="releaseNotes.txt" />
-    <Content Include="Settings.ascx" />
-    <None Include="dnn_HTML.dnn" />
-    <Content Include="Module.build" />
-    <None Include="Providers\DataProviders\SqlDataProvider\03.00.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\03.01.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\04.05.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\04.06.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\04.06.01.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\04.07.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\04.08.01.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.01.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.01.02.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.01.03.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.01.04.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.02.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.02.01.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\05.05.00.SqlDataProvider" />
-    <Content Include="Providers\DataProviders\SqlDataProvider\07.02.01.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\06.01.00.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
-    <None Include="Providers\DataProviders\SqlDataProvider\Upgrade.SqlDataProvider" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\DotNetNuke.Web.Deprecated\DotNetNuke.Web.Deprecated.csproj">
@@ -247,5 +181,5 @@
   <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
-  <Import Project="Module.build" />
+  <!--Import Project="Module.build" /-->
 </Project>

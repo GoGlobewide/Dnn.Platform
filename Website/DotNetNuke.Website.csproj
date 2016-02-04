@@ -1082,6 +1082,34 @@
     <Compile Include="DesktopModules\AuthenticationServices\DNN\Settings.ascx.designer.cs">
       <DependentUpon>Settings.ascx</DependentUpon>
     </Compile>
+    <Compile Include="DesktopModules\HTML\EditHtml.ascx.cs">
+      <DependentUpon>EditHtml.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\EditHtml.ascx.designer.cs">
+      <DependentUpon>EditHtml.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\HtmlModule.ascx.cs">
+      <DependentUpon>HtmlModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\HtmlModule.ascx.designer.cs">
+      <DependentUpon>HtmlModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\MyWork.ascx.cs">
+      <DependentUpon>MyWork.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\MyWork.ascx.designer.cs">
+      <DependentUpon>MyWork.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesktopModules\HTML\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
     <Compile Include="ErrorPage.aspx.cs">
       <DependentUpon>ErrorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1133,6 +1161,16 @@
     <Content Include="admin\Skins\DnnJsInclude.ascx" />
     <Content Include="admin\Skins\DnnCssInclude.ascx" />
     <Content Include="DesktopModules\Admin\Extensions\LanguagePacks.ascx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\EditHtml.ascx.resx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\HtmlModule.ascx.resx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\MyWork.ascx.resx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\Settings.ascx.resx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\SharedResources.resx" />
+    <Content Include="DesktopModules\HTML\App_LocalResources\Workflow.ascx.resx" />
+    <Content Include="DesktopModules\HTML\EditHtml.ascx" />
+    <Content Include="DesktopModules\HTML\HtmlModule.ascx" />
+    <Content Include="DesktopModules\HTML\MyWork.ascx" />
+    <Content Include="DesktopModules\HTML\Settings.ascx" />
     <Content Include="Install\Web.config" />
     <Content Include="Resources\Shared\components\SimpleMDE\codemirror.css" />
     <Content Include="Resources\Shared\components\SimpleMDE\marked.js" />
@@ -4504,6 +4542,10 @@
     <ProjectReference Include="..\DNN Platform\Modules\DDRMenu\DotNetNuke.Modules.DDRMenu.csproj">
       <Project>{a86ebc44-2bc8-4c4a-997b-2708e4aac345}</Project>
       <Name>DotNetNuke.Modules.DDRMenu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DNN Platform\Modules\HTML\DotNetNuke.Modules.Html.csproj">
+      <Project>{cd8732d8-b4dd-435d-bf21-a90c2964aba4}</Project>
+      <Name>DotNetNuke.Modules.Html</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
